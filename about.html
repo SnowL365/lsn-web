@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>About - Sinuo Liu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 引入Bootstrap（可选，用于布局） -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+
+  <!-- 自定义CSS -->
+  <link rel="stylesheet" href="./css/about.css" />
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <!-- 导航栏：右上角链接 -->
+  <nav class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="cv.html">CV</a>
+  </nav>
+
+  <!-- 左上角：简单介绍，文理复合型人才 -->
+  <!-- <header class="page-header">
+    <h1>About Me</h1>
+    <p>我是一位文科+理科的复合型人才，综合跨学科背景。</p>
+  </header> -->
+
+   <!-- 第1屏：教育背景（文本左，图片右） -->
+   <section class="page-section left-text-img hidden" id="section1">
+    <div class="text-col">
+      <h2>教育背景</h2>
+      <p>
+        布里斯托大学 · 地理数据科学<br/>
+        江西理工大学 · 地理信息科学<br/>
+        擅长科目：GIS、数据科学、文科写作、英语演讲
+      </p>
+    </div>
+    <div class="img-col">
+      <!-- 示例图片，实际请替换 -->
+    <img src="./images/2.jpg" alt="教育背景" style="max-width: 100%; height: auto; object-fit: contain; height: 100%;">
+    </div>
+
+    <!-- 底部箭头按钮，跳到下一屏 #section2 -->
+    <a href="#section2" class="arrow-btn">
+      <img src="./images/OIP.jfif" alt="向下箭头">
+    </a>
+  </section>
+
+  <!-- 第2屏：行业经历（图片左，文本右） -->
+  <section class="page-section right-text-img hidden" id="section2">
+    <div class="img-col">
+      <img src="./images/3.jpg" alt="行业经历">
+    </div>
+    <div class="text-col">
+      <h2>行业经历</h2>
+      <p>
+        实习：GIS开发工程师（浙江信宇科技）<br/>
+        当前岗位：WebGIS / 数据分析<br/>
+        负责：空间数据处理、可视化、代码测试
+      </p>
+    </div>
+
+    <a href="#section3" class="arrow-btn">
+      <img src="./images/OIP.jfif" alt="向下箭头">
+    </a>
+  </section>
+
+  <!-- 第3屏：专业技能（文本左，图片右） -->
+  <section class="page-section left-text-img hidden" id="section3">
+    <div class="text-col">
+      <h2>专业技能</h2>
+      <p>
+        - GIS开发：ArcGIS, QGIS, OpenLayers<br/>
+        - 数据分析：Python (Pandas, NumPy, scikit-learn), R<br/>
+        - Web开发：HTML/CSS/JS, Vue<br/>
+        - 英语写作与演讲
+      </p>
+    </div>
+    <div class="img-col">
+      <img src="./images/4.jpg" alt="专业技能">
+    </div>
+
+    <a href="#section4" class="arrow-btn">
+      <img src="./images/OIP.jfif" alt="向下箭头">
+    </a>
+  </section>
+
+  <!-- 第4屏：兴趣爱好（图片左，文本右） -->
+  <section class="page-section right-text-img hidden" id="section4">
+    <div class="img-col">
+      <img src="./images/5.jpg" alt="兴趣爱好">
+    </div>
+    <div class="text-col">
+      <h2>兴趣爱好</h2>
+      <p>
+        模拟联合国 · 旅游 · 拍照 · 美食
+        <br/>热衷各类学术竞赛与社会实践活动
+      </p>
+    </div>
+    <!-- 这里不再加“下一页”箭头，可改成返回顶部、或留空 -->
+  </section>
+  <!-- 其他可能的内容 -->
+
+  <!-- JS: IntersectionObserver for scroll animation -->
+  <script src="./js/scroll-animate.js"></script>
+  <script src="./js/跳转脚本.js"></script>
+  <!-- <script src="./js/smooth-scroll.js"></script> -->
+  <script src="./js/fade.js"></script>
+  <!-- <script src="./js/动态粒子.js>"> </script>> -->
+</body>
+</html>
