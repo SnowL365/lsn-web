@@ -24,11 +24,6 @@ from wordcloud import WordCloud
 from collections import Counter
 import matplotlib.pyplot as plt
 
-file_path = "/Users/snowliu/Downloads/20250307170539.xls"
-
-# Read Excel
-df = pd.read_excel(file_path, sheet_name="稿件信息",header = 1)
-
 ------------------
 
 
